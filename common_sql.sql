@@ -18,7 +18,11 @@ CREATE TABLE `postfix_table_name` (
 
 --MySQL添加字段：
 alter table `table_name` Add column `field_1` int not null default 0 AFTER `Regionid` (在哪个字段后面添加)
+alter table uni_promotion add `member_discount` tinyint(4) NOT NULL DEFAULT '0' COMMENT ' 参与会员折扣';
+
 --删除字段：
 alter table `table_name` drop column `field_1`
+
 --修改字段
 alter table `table_name` MODIFY column `field_1` varchar(11) NOT NULL DEFAULT '0';
+alter table `uni_shop_master` modify column `store_desc` varchar(100) NOT NULL DEFAULT '' COMMENT '店铺描述',
